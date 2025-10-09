@@ -18,7 +18,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/auth/tx"
 	txmodule "github.com/cosmos/cosmos-sdk/x/auth/tx/config"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/evm/crypto/hd"
+	"github.com/cosmos/evm/crypto/keyring"
 	"github.com/spf13/cobra"
 )
 
@@ -57,7 +57,7 @@ func NewRootCmd() *cobra.Command {
 		WithBroadcastMode(flags.BroadcastSync).
 		WithHomeDir(app.DefaultNodeHome).
 		WithViper("MANTRA").
-		WithKeyringOptions(hd.EthSecp256k1Option()).
+		WithKeyringOptions(keyring.Option()).
 		WithLedgerHasProtobuf(true)
 
 	rootCmd := &cobra.Command{
