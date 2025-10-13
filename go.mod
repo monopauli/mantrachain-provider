@@ -21,6 +21,9 @@ replace (
 	github.com/cosmos/evm => github.com/MANTRA-Chain/evm v0.0.0-20251010000919-948e96c650c7
 	github.com/cosmos/evm/evmd => github.com/MANTRA-Chain/evm/evmd v0.0.0-20251010000919-948e96c650c7
 
+	// ledger_zemu
+	github.com/cosmos/ledger-cosmos-go => github.com/mmsqe/ledger-cosmos-go v0.0.0-20251010033953-465898c7cafa
+
 	// branch: release/1.16
 	github.com/ethereum/go-ethereum => github.com/cosmos/go-ethereum v1.16.2-cosmos-1
 
